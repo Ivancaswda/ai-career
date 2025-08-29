@@ -4,6 +4,10 @@ const nextConfig: NextConfig = {
     typescript: {
         ignoreBuildErrors: true,
     },
+    reactStrictMode: true,
+    experimental: {
+        appDir: true,   // обязательно для App Router
+    },
     eslint: {
         ignoreDuringBuilds: true,
     },
