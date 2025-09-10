@@ -1,6 +1,6 @@
 import {Inngest} from "inngest";
 
 export const inngest = new Inngest({
-    id: "AiHelperAgent", // 🔹 любое имя приложения
-})
-
+    id: "AiHelperAgent",
+    eventKey: process.env.INNGEST_EVENT_KEY,
+});
